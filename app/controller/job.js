@@ -11,9 +11,9 @@ class JobController extends Controller {
 
   async list() {
     this.ctx.set({
-      'Access-Control-Allow-Origin': 'http://127.0.0.1:3000',
+      'Access-Control-Allow-Origin': 'http://www.ethanfun.club',
       'Access-Control-Allow-Credentials': true,
-      'Access-Control-Allow-Methods': 'GET, POST, PUT',
+      'Access-Control-Allow-Methods': 'GET, POST, PUT, OPTIONS',
     });
     const page = this.ctx.query.page || 1;
     const pageSize = 2
